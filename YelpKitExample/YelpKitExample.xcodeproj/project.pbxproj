@@ -46,6 +46,7 @@
 			children = (
 				C187319C218230FA009E0C47 /* YelpKitExample */,
 				C187319B218230FA009E0C47 /* Products */,
+				C18731BC218270D7009E0C47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +88,13 @@
 				C18731B621823292009E0C47 /* Navigation.swift */,
 			);
 			path = Helpful;
+			sourceTree = "<group>";
+		};
+		C18731BC218270D7009E0C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
