@@ -12,7 +12,9 @@ final class YelpAPIClient {
     
     lazy private var session: URLSession = {
         let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = ["Authorization" : "Bearer YOUR_SECRET_API_KEY_HERE", "Content-Type" : "application/json", "Accept" : "application/json"]
+        configuration.httpAdditionalHeaders = ["Authorization" : "Bearer YOUR_SECRET_API_KEY_HERE",
+                                               "Content-Type" : "application/json",
+                                               "Accept" : "application/json"]
         
         return URLSession(configuration: configuration)
     }()
