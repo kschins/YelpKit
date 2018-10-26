@@ -15,7 +15,7 @@ A wrapper around the Yelp Fusion API that contains all valid endpoints and respo
   s.platform     = :ios, "12.0"
 
   s.source       = { :git => '.' }
-  s.source_files  = ['YelpKit/*.swift']
+  s.source_files  = 'YelpKit/*.swift'
   s.resources = ['YelpKit/*.xcassets']
   s.swift_version = "4.2"
 

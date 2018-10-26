@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10D60CD218387690029A488 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D60CC218387690029A488 /* HTTPParameter.swift */; };
+		C10D60CF218387930029A488 /* URLQueryItemEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D60CE218387930029A488 /* URLQueryItemEncoder.swift */; };
 		C18731CE218275DF009E0C47 /* YelpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C18731CC218275DF009E0C47 /* YelpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C18731FD2182CDF4009E0C47 /* YelpEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18731D62182CDF4009E0C47 /* YelpEnums.swift */; };
 		C18732002182CDF4009E0C47 /* YelpAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18731D92182CDF4009E0C47 /* YelpAPIClient.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C10D60CC218387690029A488 /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
+		C10D60CE218387930029A488 /* URLQueryItemEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryItemEncoder.swift; sourceTree = "<group>"; };
 		C18731C9218275DF009E0C47 /* YelpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YelpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18731CC218275DF009E0C47 /* YelpKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YelpKit.h; sourceTree = "<group>"; };
 		C18731CD218275DF009E0C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,37 +114,18 @@
 		C18731CB218275DF009E0C47 /* YelpKit */ = {
 			isa = PBXGroup;
 			children = (
-				C18731EC2182CDF4009E0C47 /* Endpoints */,
-				C18731DB2182CDF4009E0C47 /* JSON Responses */,
-				C18731DC2182CDF4009E0C47 /* Service Models */,
-				C18731D42182CDF4009E0C47 /* Utilities */,
-				C18731D92182CDF4009E0C47 /* YelpAPIClient.swift */,
-				C18731DA2182CDF4009E0C47 /* YelpAPIRequest.swift */,
-				C18731CC218275DF009E0C47 /* YelpKit.h */,
-				C18731CD218275DF009E0C47 /* Info.plist */,
-				C188AC282182E32400216B8E /* Assets.xcassets */,
-			);
-			path = YelpKit;
-			sourceTree = "<group>";
-		};
-		C18731D42182CDF4009E0C47 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				C18731D62182CDF4009E0C47 /* YelpEnums.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		C18731DB2182CDF4009E0C47 /* JSON Responses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "JSON Responses";
-			sourceTree = "<group>";
-		};
-		C18731DC2182CDF4009E0C47 /* Service Models */ = {
-			isa = PBXGroup;
-			children = (
+				C18731EE2182CDF4009E0C47 /* YelpCategorySearch.swift */,
+				C18731EF2182CDF4009E0C47 /* YelpCategoryDetails.swift */,
+				C18731F12182CDF4009E0C47 /* YelpPhoneSearch.swift */,
+				C18731F22182CDF4009E0C47 /* YelpBusinessDetails.swift */,
+				C18731F32182CDF4009E0C47 /* YelpBusinessAutocomplete.swift */,
+				C18731F42182CDF4009E0C47 /* YelpTransactionSearch.swift */,
+				C18731F52182CDF4009E0C47 /* YelpBusinessSearch.swift */,
+				C18731F62182CDF4009E0C47 /* YelpBusinessMatch.swift */,
+				C18731F72182CDF4009E0C47 /* YelpReviews.swift */,
+				C18731F92182CDF4009E0C47 /* YelpEventSearch.swift */,
+				C18731FA2182CDF4009E0C47 /* YelpEventLookup.swift */,
+				C18731FB2182CDF4009E0C47 /* YelpFeaturedEvent.swift */,
 				C18731E02182CDF4009E0C47 /* YelpBusiness.swift */,
 				C18731E52182CDF4009E0C47 /* YelpBusinessAutocompleteResponse.swift */,
 				C18731E32182CDF4009E0C47 /* YelpBusinessSearchResponse.swift */,
@@ -157,51 +142,16 @@
 				C18731E42182CDF4009E0C47 /* YelpReviewsResponse.swift */,
 				C18731E62182CDF4009E0C47 /* YelpTerm.swift */,
 				C1F5281E2182D8F40098217A /* YelpUser.swift */,
+				C18731D62182CDF4009E0C47 /* YelpEnums.swift */,
+				C18731D92182CDF4009E0C47 /* YelpAPIClient.swift */,
+				C18731DA2182CDF4009E0C47 /* YelpAPIRequest.swift */,
+				C18731CC218275DF009E0C47 /* YelpKit.h */,
+				C18731CD218275DF009E0C47 /* Info.plist */,
+				C188AC282182E32400216B8E /* Assets.xcassets */,
+				C10D60CC218387690029A488 /* HTTPParameter.swift */,
+				C10D60CE218387930029A488 /* URLQueryItemEncoder.swift */,
 			);
-			path = "Service Models";
-			sourceTree = "<group>";
-		};
-		C18731EC2182CDF4009E0C47 /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				C18731ED2182CDF4009E0C47 /* Category */,
-				C18731F02182CDF4009E0C47 /* Business */,
-				C18731F82182CDF4009E0C47 /* Event */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		C18731ED2182CDF4009E0C47 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				C18731EE2182CDF4009E0C47 /* YelpCategorySearch.swift */,
-				C18731EF2182CDF4009E0C47 /* YelpCategoryDetails.swift */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		C18731F02182CDF4009E0C47 /* Business */ = {
-			isa = PBXGroup;
-			children = (
-				C18731F12182CDF4009E0C47 /* YelpPhoneSearch.swift */,
-				C18731F22182CDF4009E0C47 /* YelpBusinessDetails.swift */,
-				C18731F32182CDF4009E0C47 /* YelpBusinessAutocomplete.swift */,
-				C18731F42182CDF4009E0C47 /* YelpTransactionSearch.swift */,
-				C18731F52182CDF4009E0C47 /* YelpBusinessSearch.swift */,
-				C18731F62182CDF4009E0C47 /* YelpBusinessMatch.swift */,
-				C18731F72182CDF4009E0C47 /* YelpReviews.swift */,
-			);
-			path = Business;
-			sourceTree = "<group>";
-		};
-		C18731F82182CDF4009E0C47 /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				C18731F92182CDF4009E0C47 /* YelpEventSearch.swift */,
-				C18731FA2182CDF4009E0C47 /* YelpEventLookup.swift */,
-				C18731FB2182CDF4009E0C47 /* YelpFeaturedEvent.swift */,
-			);
-			path = Event;
+			path = YelpKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +249,12 @@
 				C18732122182CDF4009E0C47 /* YelpCategoryDetails.swift in Sources */,
 				C18732072182CDF4009E0C47 /* YelpReview.swift in Sources */,
 				C18732112182CDF4009E0C47 /* YelpCategorySearch.swift in Sources */,
+				C10D60CD218387690029A488 /* HTTPParameter.swift in Sources */,
 				C18732102182CDF4009E0C47 /* YelpEventsResponse.swift in Sources */,
 				C18732182182CDF4009E0C47 /* YelpBusinessMatch.swift in Sources */,
 				C187320A2182CDF4009E0C47 /* YelpBusinessAutocompleteResponse.swift in Sources */,
 				C187320C2182CDF4009E0C47 /* YelpLocation.swift in Sources */,
+				C10D60CF218387930029A488 /* URLQueryItemEncoder.swift in Sources */,
 				C18732192182CDF4009E0C47 /* YelpReviews.swift in Sources */,
 				C187320D2182CDF4009E0C47 /* YelpError.swift in Sources */,
 				C187320F2182CDF4009E0C47 /* YelpCenter.swift in Sources */,
