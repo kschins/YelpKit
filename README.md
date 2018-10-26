@@ -3,22 +3,22 @@ A framework around the [Yelp Fusion API](https://www.yelp.com/developers/documen
 
 See below for all of the endpoints this framework covers:
 - Business Endpoints
-    - Business Search
-    - Phone Search
-    - Transaction Search
-    - Business Details
-    - Business Match
-     - Reviews
-     - Autocomplete
+    - [Business Search](https://www.yelp.com/developers/documentation/v3/business_search)
+    - [Phone Search](https://www.yelp.com/developers/documentation/v3/business_search_phone)
+    - [Transaction Search](https://www.yelp.com/developers/documentation/v3/transaction_search)
+    - [Business Details](https://www.yelp.com/developers/documentation/v3/business)
+    - [Business Match](https://www.yelp.com/developers/documentation/v3/business_match)
+     - [Reviews](https://www.yelp.com/developers/documentation/v3/business_reviews)
+     - [Autocomplete](https://www.yelp.com/developers/documentation/v3/autocomplete)
      
 - Category Endpoints
-    - All Categories
-    - Category Details
+    - [All Categories](https://www.yelp.com/developers/documentation/v3/all_categories)
+    - [Category Details](https://www.yelp.com/developers/documentation/v3/category)
     
 - Event Endpoints
-    - Event Lookup
-    - Event Search
-    - Featured Event
+    - [Event Lookup](https://www.yelp.com/developers/documentation/v3/event)
+    - [Event Search](https://www.yelp.com/developers/documentation/v3/event_search)
+    - [Featured Event](https://www.yelp.com/developers/documentation/v3/featured_event)
     
 ## Installation
     
