@@ -8,7 +8,7 @@
 import Foundation
 
 /// Encodes any encodable to a URLQueryItem list
-enum URLQueryItemEncoder {
+public enum URLQueryItemEncoder {
     static func encode<T: Encodable>(_ encodable: T) throws -> [URLQueryItem] {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
