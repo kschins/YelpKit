@@ -7,13 +7,13 @@
 
 import Foundation
 
-public final class YelpAPIClient {
+public class YelpAPIClient {
     /// A wrapper around the response determining a success or failure
     /// - success returns the expected type defined by the request
     /// - failure returns an error
     public enum YelpResult<T: Decodable> {
         case success(T)
-        case failure(YelpError)
+        case failure(Error)
     }
     
     private let yelpBaseUrl = URL(string: "https://api.yelp.com/v3")!
