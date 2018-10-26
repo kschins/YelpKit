@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class YelpAPIClient {
+public final class YelpAPIClient {
     /// A wrapper around the response determining a success or failure
     /// - success returns the expected type defined by the request
     /// - failure returns an error
@@ -45,12 +45,12 @@ public class YelpAPIClient {
                 } catch let error {
                     DispatchQueue.main.async {
                         print(error.localizedDescription)
-                        completion(.failure(YelpError.error(error.localizedDescription)))
+                        completion(.failure(error))
                     }
                 }
             } else if let error = error {
                 DispatchQueue.main.async {
-                    completion(.failure(YelpError.error(error.localizedDescription)))
+                    completion(.failure(error))
                 }
             }
         }

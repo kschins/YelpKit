@@ -5,8 +5,6 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-import Foundation
-
 public enum YelpError: Error {
     case encoding
     case decoding
