@@ -39,7 +39,7 @@ swift package fetch
 ```
 
 ### CocoaPods
-[CocoaPods](http://cocoapods.org) is a dependency manager that helps simplify the process of using third-party frameworks.
+[CocoaPods](http://cocoapods.org) is a third-party dependency manager that allows you to easily integrate external frameworks.
 You can install CocoaPods with the following command:
 
 ```ruby
