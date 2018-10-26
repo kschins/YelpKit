@@ -18,7 +18,7 @@ public final class YelpAPIClient {
         return URLSession(configuration: configuration)
     }()
     
-    public init(with apiKey: String) {
+    public init(apiKey: String) {
         self.apiKey = apiKey
     }
     
