@@ -8,8 +8,16 @@
 import Foundation
 
 public final class YelpAPIClient {
+    /// A wrapper around the response determining a success or failure
+    /// - success returns the expected type defined by the request
+    /// - failure returns an error
+    public enum YelpResult<T: Decodable> {
+        case success(T)
+        case failure(YelpError.ErrorType)
+    }
+    
     private let yelpBaseUrl = URL(string: "https://api.yelp.com/v3")!
-    private let apiKey = "YOUR-API-KEY-HERE"
+    private let apiKey = "YOUR_API_KEY_HERE"
     
     lazy private var session: URLSession = {
         let configuration = URLSessionConfiguration.default
