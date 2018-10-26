@@ -6,18 +6,18 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpEventLookup: YelpAPIRequest {
+public struct YelpEventLookup: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpEvent?
-    var endpoint: String { return "/events/\(id)" }
+    public typealias Response = YelpEvent?
+    public var endpoint: String { return "/events/\(id)" }
     
     // Parameters
     private let id: String
     private let locale: String
     
     // Request Initializer
-    init(id: String, locale: YelpLocale = .english_unitedStates) {
+    public init(id: String, locale: YelpLocale = .english_unitedStates) {
         self.id = id
         self.locale = locale.rawValue
     }

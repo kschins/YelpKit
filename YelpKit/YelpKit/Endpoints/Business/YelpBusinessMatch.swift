@@ -6,11 +6,11 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpBusinessMatch: YelpAPIRequest {
+public struct YelpBusinessMatch: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = [YelpBusiness]
-    var endpoint: String { return "/businesses/matches" }
+    public typealias Response = [YelpBusiness]
+    public var endpoint: String { return "/businesses/matches" }
     
     // Parameters
     private let name: String
@@ -29,20 +29,20 @@ struct YelpBusinessMatch: YelpAPIRequest {
     private let matchThreshold: String?
     
     // Request Initializer
-    init(name: String,
-         address1: String,
-         address2: String? = nil,
-         address3: String? = nil,
-         city: String,
-         state: String,
-         country: String,
-         latitude: Double? = nil,
-         longitude: Double? = nil,
-         phone: String? = nil,
-         zipCode: String? = nil,
-         yelpBusinessId: String? = nil,
-         limit: Int? = nil,
-         matchThreshold: String? = nil) {
+    public init(name: String,
+                address1: String,
+                address2: String? = nil,
+                address3: String? = nil,
+                city: String,
+                state: String,
+                country: String,
+                latitude: Double? = nil,
+                longitude: Double? = nil,
+                phone: String? = nil,
+                zipCode: String? = nil,
+                yelpBusinessId: String? = nil,
+                limit: Int? = nil,
+                matchThreshold: String? = nil) {
         self.name = name
         self.address1 = address1
         self.address2 = address2

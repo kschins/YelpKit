@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct YelpReview: Decodable {
-    let text: String?
-    let url: URL?
-    let rating: Int?
-    let timeCreated: String?
-    //let user: YelpUser?
+public struct YelpReview: Decodable {
+    public let text: String?
+    public let url: URL?
+    public let rating: Int?
+    public let timeCreated: String?
+    public let user: YelpUser?
 }

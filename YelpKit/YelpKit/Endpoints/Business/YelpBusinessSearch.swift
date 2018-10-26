@@ -6,11 +6,11 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpBusinessSearch: YelpAPIRequest {
+public struct YelpBusinessSearch: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpBusinessSearchResponse
-    var endpoint: String { return "/businesses/search" }
+    public typealias Response = YelpBusinessSearchResponse
+    public var endpoint: String { return "/businesses/search" }
     
     // Parameters
     private let term: String?
@@ -29,20 +29,20 @@ struct YelpBusinessSearch: YelpAPIRequest {
     private let attributes: [String]? // TODO: make this an enum of filter types
     
     // Request Initializer
-    init(term: String? = nil,
-         location: String? = nil,
-         latitude: Double? = nil,
-         longitude: Double? = nil,
-         radius: Int? = nil,
-         categories: [String]? = nil,
-         locale: String? = nil,
-         limit: Int? = nil,
-         offset: Int? = nil,
-         sortBy: String? = nil,
-         priceTiers: [String]? = nil,
-         openNow: Bool? = nil,
-         openAt: Int? = nil,
-         attributes: [String]? = nil) {
+    public init(term: String? = nil,
+                location: String? = nil,
+                latitude: Double? = nil,
+                longitude: Double? = nil,
+                radius: Int? = nil,
+                categories: [String]? = nil,
+                locale: String? = nil,
+                limit: Int? = nil,
+                offset: Int? = nil,
+                sortBy: String? = nil,
+                priceTiers: [String]? = nil,
+                openNow: Bool? = nil,
+                openAt: Int? = nil,
+                attributes: [String]? = nil) {
         self.term = term
         self.location = location
         self.latitude = latitude

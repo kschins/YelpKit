@@ -6,11 +6,11 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpTransactionSearch: YelpAPIRequest {
+public struct YelpTransactionSearch: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpBusinessSearchResponse
-    var endpoint: String { return "/transactions/\(transactionType.rawValue)/search" }
+    public typealias Response = YelpBusinessSearchResponse
+    public var endpoint: String { return "/transactions/\(transactionType.rawValue)/search" }
     
     // Parameters
     private let transactionType: YelpTransactionType
@@ -19,10 +19,10 @@ struct YelpTransactionSearch: YelpAPIRequest {
     private let location: String
     
     // Request Initializer
-    init(transactionType: YelpTransactionType,
-         latitude: Double,
-         longitude: Double,
-         location: String) {
+    public init(transactionType: YelpTransactionType,
+                latitude: Double,
+                longitude: Double,
+                location: String) {
         self.transactionType = transactionType
         self.latitude = latitude
         self.longitude = longitude

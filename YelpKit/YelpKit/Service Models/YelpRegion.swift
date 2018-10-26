@@ -6,6 +6,6 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpRegion: Decodable {
-    let center: YelpCenter
+public struct YelpRegion: Decodable {
+    public let center: YelpCenter
 }

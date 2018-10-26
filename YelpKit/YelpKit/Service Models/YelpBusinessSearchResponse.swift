@@ -6,8 +6,8 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpBusinessSearchResponse: Decodable {
-    let businesses: [YelpBusiness]
-    let total: Int
-    let region: YelpRegion?
+public struct YelpBusinessSearchResponse: Decodable {
+    public let businesses: [YelpBusiness]
+    public let total: Int
+    public let region: YelpRegion?
 }

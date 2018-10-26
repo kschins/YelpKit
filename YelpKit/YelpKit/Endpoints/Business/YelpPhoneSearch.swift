@@ -6,17 +6,17 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpPhoneSearch: YelpAPIRequest {
+public struct YelpPhoneSearch: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpBusinessSearchResponse
-    var endpoint: String { return "/businesses/search/phone" }
+    public typealias Response = YelpBusinessSearchResponse
+    public var endpoint: String { return "/businesses/search/phone" }
     
     // Parameters
     private let phone: String
     
     // Request Initializer
-    init(phone: String) {
+    public init(phone: String) {
         self.phone = phone
     }
 }

@@ -8,15 +8,16 @@
 
 import Foundation
 
-struct YelpError: Decodable {
-    enum ErrorType: Error {
+public struct YelpError: Decodable {
+    
+    public enum ErrorType: Error {
         case encoding
         case decoding
         case network
         case error(String)
     }
 
-    let code: String?
-    let field: String?
-    let description: String?
+    public let code: String?
+    public let field: String?
+    public let description: String?
 }

@@ -6,6 +6,6 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpTerm: Decodable {
-    let text: String?
+public struct YelpTerm: Decodable {
+    public let text: String?
 }

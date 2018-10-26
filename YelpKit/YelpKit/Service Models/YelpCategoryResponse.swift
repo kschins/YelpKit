@@ -6,6 +6,6 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpCategoryResponse: Decodable {
-    let categories: [YelpCategory]?
+public struct YelpCategoryResponse: Decodable {
+    public let categories: [YelpCategory]?
 }

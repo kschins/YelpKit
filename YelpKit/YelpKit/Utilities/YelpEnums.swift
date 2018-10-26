@@ -6,7 +6,7 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-enum YelpBusinessCategoryFilter: String {
+public enum YelpBusinessCategoryFilter: String {
     // Active Life
     case activeLife                 = "active"
     case atvRentalsAndTours         = "atvrentals"
@@ -1535,7 +1535,7 @@ enum YelpBusinessCategoryFilter: String {
     case wigs                               = "wigs"
 }
 
-enum YelpAttributeFilter: String {
+public enum YelpAttributeFilter: String {
     case hotAndNew              = "hot_and_new"
     case requestAQuote          = "request_a_quote"
     case waitlistReservation    = "waitlist_reservation"
@@ -1544,7 +1544,7 @@ enum YelpAttributeFilter: String {
     case genderNeutralRestrooms = "gender_neutral_restrooms"
 }
 
-enum YelpEventCategoryFilter: String, Decodable {
+public enum YelpEventCategoryFilter: String, Decodable {
     case charities              = "charities"
     case fashion                = "fashion"
     case festivalsAndFairs      = "festivals-fairs"
@@ -1560,24 +1560,24 @@ enum YelpEventCategoryFilter: String, Decodable {
     case visualArts             = "visual-arts"
 }
 
-enum YelpBusinessSortType: String {
+public enum YelpBusinessSortType: String {
     case bestMatch      = "best_match"
     case rating         = "rating"
     case reviewCount    = "review_count"
     case distance       = "distance"
 }
 
-enum YelpEventSortByType: String {
+public enum YelpEventSortByType: String {
     case ascending  = "asc"
     case descending = "desc"
 }
 
-enum YelpEventSortOnType: String {
+public enum YelpEventSortOnType: String {
     case popularity = "popularity"
     case timeStart  = "time_start"
 }
 
-enum YelpLocale: String {
+public enum YelpLocale: String {
     case chinese_hongKong           = "zh_HK"
     case chinese_taiwan             = "zh_TW"
     case czech_czechRepublic        = "cs_CZ"
@@ -1622,14 +1622,14 @@ enum YelpLocale: String {
     case turkish_turkey             = "tr_TR"
 }
 
-enum YelpPriceTier: String {
+public enum YelpPriceTier: String {
     case oneDollarSign      = "1"
     case twoDollarSigns     = "2"
     case threeDollarSigns   = "3"
     case fourDollarSigns    = "4"
 }
 
-enum YelpStar: String {
+public enum YelpStar: String {
     case zero       = "zero"
     case one        = "one"
     case oneHalf    = "one_half"
@@ -1642,13 +1642,13 @@ enum YelpStar: String {
     case five       = "five"
 }
 
-enum YelpStarSize: String {
+public enum YelpStarSize: String {
     case small      = "small"
     case regular    = "regular"
     case large      = "large"
     case extraLarge = "extra_large"
 }
 
-enum YelpTransactionType: String, Encodable {
+public enum YelpTransactionType: String, Encodable {
     case foodDelivery = "delivery"
 }

@@ -6,11 +6,11 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpBusinessAutocomplete: YelpAPIRequest {
+public struct YelpBusinessAutocomplete: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpBusinessAutocompleteResponse
-    var endpoint: String { return "/autocomplete" }
+    public typealias Response = YelpBusinessAutocompleteResponse
+    public var endpoint: String { return "/autocomplete" }
     
     // Parameters
     private let text: String
@@ -19,10 +19,10 @@ struct YelpBusinessAutocomplete: YelpAPIRequest {
     private let locale: String
     
     // Request Initializer
-    init(text: String,
-         latitude: Double,
-         longitude: Double,
-         locale: YelpLocale = .english_unitedStates) {
+    public init(text: String,
+                latitude: Double,
+                longitude: Double,
+                locale: YelpLocale = .english_unitedStates) {
         self.text = text
         self.latitude = latitude
         self.longitude = longitude

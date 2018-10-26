@@ -6,13 +6,13 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpLocation: Decodable {
-    let address1: String?
-    let address2: String?
-    let address3: String?
-    let city: String?
-    let zipCode: String?
-    let country: String?
-    let state: String?
-    let displayAddress: [String]?
+public struct YelpLocation: Decodable {
+    public let address1: String?
+    public let address2: String?
+    public let address3: String?
+    public let city: String?
+    public let zipCode: String?
+    public let country: String?
+    public let state: String?
+    public let displayAddress: [String]?
 }

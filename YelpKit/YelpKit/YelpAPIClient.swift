@@ -7,17 +7,20 @@
 
 import Foundation
 
-final class YelpAPIClient {
+public final class YelpAPIClient {
     private let yelpBaseUrl = URL(string: "https://api.yelp.com/v3")!
+    private let apiKey = "YOUR-API-KEY-HERE"
     
     lazy private var session: URLSession = {
         let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = ["Authorization" : "Bearer YOUR-API-KEY", "Content-Type" : "application/json", "Accept" : "application/json"]
+        configuration.httpAdditionalHeaders = ["Authorization" : "Bearer \(apiKey)", "Content-Type" : "application/json", "Accept" : "application/json"]
         
         return URLSession(configuration: configuration)
     }()
     
-    func request<T: YelpAPIRequest>(request: T, completion: @escaping (YelpResult<T.Response>) -> ()) {
+    public init() {}
+    
+    public func request<T: YelpAPIRequest>(request: T, completion: @escaping (YelpResult<T.Response>) -> ()) {
         var urlRequest = URLRequest(url: endpoint(for: request))
         urlRequest.httpMethod = "GET"
         

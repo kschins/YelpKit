@@ -6,11 +6,11 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpFeaturedEvent: YelpAPIRequest {
+public struct YelpFeaturedEvent: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpEvent?
-    var endpoint: String { return "/events/featured" }
+    public typealias Response = YelpEvent?
+    public var endpoint: String { return "/events/featured" }
     
     // Parameters
     private let locale: String
@@ -19,10 +19,10 @@ struct YelpFeaturedEvent: YelpAPIRequest {
     private let longitude: Double?
     
     // Request Initializer
-    init(locale: YelpLocale = .english_unitedStates,
-         location: String? = nil,
-         latitude: Double? = nil,
-         longitude: Double? = nil) {
+    public init(locale: YelpLocale = .english_unitedStates,
+                location: String? = nil,
+                latitude: Double? = nil,
+                longitude: Double? = nil) {
         self.locale = locale.rawValue
         self.location = location
         self.latitude = latitude

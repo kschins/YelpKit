@@ -8,20 +8,20 @@
 
 import Foundation
 
-struct YelpBusiness: Decodable {
-    let id: String?
-    let alias: String?
-    let name: String?
-    let isClosed: Bool?
-    let url: URL?
-    let reviewCount: Int?
-    let categories: [YelpCategory]?
-    let rating: Double?
-    let coordinates: YelpCoordinates?
-    let transactions: [String]?
-    let price: String?
-    let location: YelpLocation?
-    let phone: String?
-    let displayPhone: String?
-    let distance: Double?
+public struct YelpBusiness: Decodable {
+    public let id: String?
+    public let alias: String?
+    public let name: String?
+    public let isClosed: Bool?
+    public let url: URL?
+    public let reviewCount: Int?
+    public let categories: [YelpCategory]?
+    public let rating: Double?
+    public let coordinates: YelpCoordinates?
+    public let transactions: [String]?
+    public let price: String?
+    public let location: YelpLocation?
+    public let phone: String?
+    public let displayPhone: String?
+    public let distance: Double?
 }

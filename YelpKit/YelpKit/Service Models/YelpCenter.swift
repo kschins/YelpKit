@@ -6,7 +6,7 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpCenter: Decodable {
-    let longitude: Double
-    let latitude: Double
+public struct YelpCenter: Decodable {
+    public let longitude: Double
+    public let latitude: Double
 }

@@ -8,25 +8,25 @@
 
 import Foundation
 
-struct YelpEvent: Decodable {
-    let attendingCount: Int?
-    let category: YelpEventCategoryFilter?
-    let cost: Int?
-    let costMax: Int?
-    let description: String?
-    let eventSiteUrl: URL?
-    let id: String?
-    let imageUrl: URL?
-    let interestedCount: Int?
-    let isCanceled: Bool?
-    let isFree: Bool?
-    let isOfficial: Bool?
-    let latitude: Double?
-    let longitude: Double?
-    let name: String?
-    let ticketsUrl: URL?
-    let timeStart: String?
-    let timeEnd: String?
-    let location: YelpLocation?
-    let businessId: String?
+public struct YelpEvent: Decodable {
+    public let attendingCount: Int?
+    public let category: YelpEventCategoryFilter?
+    public let cost: Int?
+    public let costMax: Int?
+    public let description: String?
+    public let eventSiteUrl: URL?
+    public let id: String?
+    public let imageUrl: URL?
+    public let interestedCount: Int?
+    public let isCanceled: Bool?
+    public let isFree: Bool?
+    public let isOfficial: Bool?
+    public let latitude: Double?
+    public let longitude: Double?
+    public let name: String?
+    public let ticketsUrl: URL?
+    public let timeStart: String?
+    public let timeEnd: String?
+    public let location: YelpLocation?
+    public let businessId: String?
 }

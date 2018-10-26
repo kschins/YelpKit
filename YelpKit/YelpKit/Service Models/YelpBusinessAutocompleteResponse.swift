@@ -6,8 +6,8 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpBusinessAutocompleteResponse: Decodable {
-    let terms: [YelpTerm]?
-    let businesses: [YelpBusiness]?
-    let categories: [YelpCategory]?
+public struct YelpBusinessAutocompleteResponse: Decodable {
+    public let terms: [YelpTerm]?
+    public let businesses: [YelpBusiness]?
+    public let categories: [YelpCategory]?
 }

@@ -6,10 +6,10 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpCategory: Decodable {
-    let alias: String
-    let title: String
-    let parentAliases: [String]?
-    let countryWhitelist: [String]?
-    let countryBlacklist: [String]?
+public struct YelpCategory: Decodable {
+    public let alias: String
+    public let title: String
+    public let parentAliases: [String]?
+    public let countryWhitelist: [String]?
+    public let countryBlacklist: [String]?
 }

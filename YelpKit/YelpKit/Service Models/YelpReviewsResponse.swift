@@ -6,8 +6,8 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpReviewsResponse: Decodable {
-    let reviews: [YelpReview]?
-    let total: Int?
-    let error: YelpError?
+public struct YelpReviewsResponse: Decodable {
+    public let reviews: [YelpReview]?
+    public let total: Int?
+    public let error: YelpError?
 }

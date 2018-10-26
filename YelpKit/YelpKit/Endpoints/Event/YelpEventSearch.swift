@@ -6,11 +6,11 @@
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
 //
 
-struct YelpEventSearch: YelpAPIRequest {
+public struct YelpEventSearch: YelpAPIRequest {
     
     // YelpAPIRequest Protocol
-    typealias Response = YelpEventsResponse
-    var endpoint: String { return "/events" }
+    public typealias Response = YelpEventsResponse
+    public var endpoint: String { return "/events" }
     
     // Parameters
     private let locale: String
@@ -29,20 +29,20 @@ struct YelpEventSearch: YelpAPIRequest {
     private let excludedEvents: [String]?
     
     // Request Initializer
-    init(locale: YelpLocale = .english_unitedStates,
-         offset: Int? = nil,
-         limit: Int? = nil,
-         sortBy: YelpEventSortByType? = nil,
-         sortOn: YelpEventSortOnType? = nil,
-         startDate: Int? = nil,
-         endDate: Int? = nil,
-         categories: Int? = nil,
-         isFree: Bool? = nil,
-         location: String? = nil,
-         latitude: Double? = nil,
-         longitude: Double? = nil,
-         radius: Int? = nil,
-         excludedEvents: [String]? = nil) {
+    public init(locale: YelpLocale = .english_unitedStates,
+                offset: Int? = nil,
+                limit: Int? = nil,
+                sortBy: YelpEventSortByType? = nil,
+                sortOn: YelpEventSortOnType? = nil,
+                startDate: Int? = nil,
+                endDate: Int? = nil,
+                categories: Int? = nil,
+                isFree: Bool? = nil,
+                location: String? = nil,
+                latitude: Double? = nil,
+                longitude: Double? = nil,
+                radius: Int? = nil,
+                excludedEvents: [String]? = nil) {
         self.locale = locale.rawValue
         self.offset = offset
         self.limit = limit

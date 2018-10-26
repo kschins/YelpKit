@@ -9,7 +9,7 @@
 /// A wrapper around the response determining a success or failure
 /// - success returns the expected type defined by the request
 /// - failure returns an error
-enum YelpResult<T: Decodable> {
+public enum YelpResult<T: Decodable> {
     case success(T)
     case failure(YelpError.ErrorType)
 }
