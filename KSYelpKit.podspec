@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-s.name         = "YelpKit"
+s.name         = "KSYelpKit"
 s.version      = "1.0.0"
 s.summary      = "A wrapper around the Yelp Fusion API written in Swift."
 s.description  = <<-DESC
