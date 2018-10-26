@@ -74,4 +74,16 @@ public final class YelpAPIClient {
         
         return components.url!
     }
+    
+    /// Encodes any encodable to a URLQueryItem list
+    private enum URLQueryItemEncoder {
+        static func encode<T: Encodable>(_ encodable: T) throws -> [URLQueryItem] {
+            let encoder = JSONEncoder()
+            encoder.keyEncodingStrategy = .convertToSnakeCase
+            let data = try encoder.encode(encodable)
+            let parameters = try JSONDecoder().decode([String : HTTPParameter].self, from: data)
+            
+            return parameters.map { URLQueryItem(name: $0, value: $1.description) }
+        }
+    }
 }
