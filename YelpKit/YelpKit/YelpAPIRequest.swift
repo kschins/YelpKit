@@ -1,6 +1,5 @@
 //
 //  YelpAPIRequest.swift
-//  Eateries
 //
 //  Created by Kasey Schindler on 10/19/18.
 //  Copyright © 2018 Curiously Creative, LLC. All rights reserved.
