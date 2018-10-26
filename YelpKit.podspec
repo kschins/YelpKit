@@ -14,7 +14,7 @@ s.social_media_url   = "http://twitter.com/kschins"
 
 s.platform     = :ios, "12.0"
 
-s.source       = { :git => "https://github.com/kschins/YelpKit", :tag => "1.0.0" }
+s.source       = { :git => "https://github.com/kschins/YelpKit.git", :tag => "1.0.0" }
 s.source_files  = 'YelpKit/YelpKit/*.swift'
 s.resources = ['YelpKit/YelpKit/*.xcassets']
 s.swift_version = "4.2"
