@@ -93,6 +93,10 @@ public final class YelpAPIClient {
         case int(Int)
         case double(Double)
         
+        enum HTTPParameterError: Error {
+            case encoding
+        }
+        
         init(from decoder: Decoder) throws {
             let container = try decoder.singleValueContainer()
             
@@ -105,7 +109,7 @@ public final class YelpAPIClient {
             } else if let double = try? container.decode(Double.self) {
                 self = .double(double)
             } else {
-                throw YelpError.decoding
+                throw HTTPParameterError.encoding
             }
         }
         
