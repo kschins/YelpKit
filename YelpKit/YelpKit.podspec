@@ -7,12 +7,12 @@ Pod::Spec.new do |s|
 A wrapper around the Yelp Fusion API that contains all valid endpoints and responses.
                    DESC
   s.homepage     = "https://github.com/kschins/YelpKit"
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.license      = { :type => 'MIT', :file => '../LICENSE' }
 
   s.author    = "Kasey Schindler"
   s.social_media_url   = "http://twitter.com/kschins"
 
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "12.0"
 
   s.source       = { :git => '.' }
   s.source_files  = "YelpKit"
