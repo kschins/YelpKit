@@ -8,5 +8,4 @@
 public struct YelpReviewsResponse: Decodable {
     public let reviews: [YelpReview]?
     public let total: Int?
-    public let error: YelpError?
 }

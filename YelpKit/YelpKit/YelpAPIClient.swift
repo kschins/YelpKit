@@ -13,7 +13,7 @@ public final class YelpAPIClient {
     /// - failure returns an error
     public enum YelpResult<T: Decodable> {
         case success(T)
-        case failure(YelpError.ErrorType)
+        case failure(YelpError)
     }
     
     private let yelpBaseUrl = URL(string: "https://api.yelp.com/v3")!
@@ -45,12 +45,12 @@ public final class YelpAPIClient {
                 } catch let error {
                     DispatchQueue.main.async {
                         print(error.localizedDescription)
-                        completion(.failure(YelpError.ErrorType.error(error.localizedDescription)))
+                        completion(.failure(YelpError.error(error.localizedDescription)))
                     }
                 }
             } else if let error = error {
                 DispatchQueue.main.async {
-                    completion(.failure(YelpError.ErrorType.error(error.localizedDescription)))
+                    completion(.failure(YelpError.error(error.localizedDescription)))
                 }
             }
         }
