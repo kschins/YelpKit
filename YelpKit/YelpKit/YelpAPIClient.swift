@@ -8,16 +8,8 @@
 import Foundation
 
 public final class YelpAPIClient {
-    /// A wrapper around the response determining a success or failure
-    /// - success returns the expected type defined by the request
-    /// - failure returns an error
-    public enum YelpResult<T: Decodable> {
-        case success(T)
-        case failure(Error)
-    }
-    
     private let yelpBaseUrl = URL(string: "https://api.yelp.com/v3")!
-    private let apiKey = "YOUR_API_KEY_HERE"
+    private let apiKey: String
     
     lazy private var session: URLSession = {
         let configuration = URLSessionConfiguration.default
@@ -26,7 +18,9 @@ public final class YelpAPIClient {
         return URLSession(configuration: configuration)
     }()
     
-    public init() {}
+    public init(with apiKey: String) {
+        self.apiKey = apiKey
+    }
     
     public func request<T: YelpAPIRequest>(request: T, completion: @escaping (YelpResult<T.Response>) -> ()) {
         var urlRequest = URLRequest(url: endpoint(for: request))
