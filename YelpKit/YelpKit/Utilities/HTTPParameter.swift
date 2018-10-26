@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HTTPParameter: CustomStringConvertible, Decodable {
+internal enum HTTPParameter: CustomStringConvertible, Decodable {
     case string(String)
     case bool(Bool)
     case int(Int)
